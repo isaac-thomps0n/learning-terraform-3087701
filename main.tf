@@ -34,7 +34,6 @@ module "blog_vpc" {
     Environment = var.environment.name
   }
 }
-
 module "autoscaling" {
   source  = "terraform-aws-modules/autoscaling/aws"
   version = "6.5.2"
